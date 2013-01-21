@@ -24,6 +24,7 @@
 		E32A27D616A98C1000EA9F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32A27AE16A98C1000EA9F79 /* Foundation.framework */; };
 		E32A27DE16A98C1000EA9F79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E32A27DC16A98C1000EA9F79 /* InfoPlist.strings */; };
 		E32A27E116A98C1000EA9F79 /* HelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E32A27E016A98C1000EA9F79 /* HelloWorldTests.m */; };
+		E32A27EC16A9A59C00EA9F79 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E32A27EB16A9A59C00EA9F79 /* MyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		E32A27DD16A98C1000EA9F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E32A27DF16A98C1000EA9F79 /* HelloWorldTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldTests.h; sourceTree = "<group>"; };
 		E32A27E016A98C1000EA9F79 /* HelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldTests.m; sourceTree = "<group>"; };
+		E32A27EA16A9A59C00EA9F79 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		E32A27EB16A9A59C00EA9F79 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				E32A27C716A98C1000EA9F79 /* MainStoryboard_iPad.storyboard */,
 				E32A27CA16A98C1000EA9F79 /* ViewController.h */,
 				E32A27CB16A98C1000EA9F79 /* ViewController.m */,
+				E32A27EA16A9A59C00EA9F79 /* MyView.h */,
+				E32A27EB16A9A59C00EA9F79 /* MyView.m */,
 				E32A27B316A98C1000EA9F79 /* Supporting Files */,
 			);
 			path = HelloWorld;
@@ -277,6 +282,7 @@
 				E32A27B916A98C1000EA9F79 /* main.m in Sources */,
 				E32A27BD16A98C1000EA9F79 /* AppDelegate.m in Sources */,
 				E32A27CC16A98C1000EA9F79 /* ViewController.m in Sources */,
+				E32A27EC16A9A59C00EA9F79 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +349,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -356,7 +362,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,13 +378,13 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,6 +467,7 @@
 				E32A27E616A98C1000EA9F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32A27E716A98C1000EA9F79 /* Build configuration list for PBXNativeTarget "HelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				E32A27E916A98C1000EA9F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
