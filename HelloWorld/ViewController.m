@@ -65,7 +65,7 @@
  */
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesEnded:touches withEvent:event];
-    // 虹をフェードアウトする
+
     UITouch* touch = (UITouch*)[touches anyObject];
     CGPoint location = [touch locationInView:self.view];
     NSLog(@"end %.2f, %.2f", location.x, location.y);

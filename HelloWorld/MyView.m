@@ -150,7 +150,7 @@ float lamda[ARRAY_SIZE];
 
 /**
  * g(x) = w_t * x + b
- *
+ * 参考:http://www.neuro.sfc.keio.ac.jp/%7Emasato/study/SVM/SVM_2_1.htm
  */
 - (void)drawSVM{
     float w[DIM];
